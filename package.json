@@ -1,6 +1,6 @@
 {
   "name": "as-god-intended",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Enforce callback style asynchronous programming",
   "main": "index.js",
   "scripts": {
