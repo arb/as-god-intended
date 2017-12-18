@@ -1,0 +1,27 @@
+{
+  "name": "as-god-intended",
+  "version": "1.0.0",
+  "description": "Enforce callback style asynchronous programming",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:arb/as-god-intended.git"
+  },
+  "keywords": [
+    "callback",
+    "promise",
+    "style",
+    "asynchronous"
+  ],
+  "author": "Adam Bretz <arbretz@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "22.0.0"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  }
+}
