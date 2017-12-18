@@ -4,7 +4,7 @@
   "description": "Enforce callback style asynchronous programming",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "node index.test.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,6 @@
   ],
   "author": "Adam Bretz <arbretz@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "jest": "22.0.0"
-  },
   "engines": {
     "node": ">= 4.0.0"
   }

@@ -1,9 +1,13 @@
+const Assert = require('assert');
 require('./index');
-describe('as-god-intended', () => {
-  it('fixes promises so they behave the same across all code points', () => {
-    expect(Promise.prototype.then).toBeUndefined();
-    expect(() => {
-      return Promise.resolve().then(() => {});
-    }).toThrow('then is not a function');
-  });
-});
+
+try {
+  Assert.strictEqual(Promise.prototype.then, undefined, 'Promise.then must be undefined');
+  Assert.throws(() => {
+    Promise.resolve().then(() => {});
+  }, 'Promise.then is not a function');
+  process.exit(0);
+} catch (error) {
+  console.error(error);
+  process.exit(-1);
+}
